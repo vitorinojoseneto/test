@@ -11,31 +11,23 @@
     width: 90%;
 }
 .header_master{
+    width: 100%;
+    height: 100vh;
     background: linear-gradient(40deg,#0009,#0009),url('../imagem/pexels-max-andrey-2669601.jpg');
     background-size: cover;
     background-position:center;
-    position: fixed;
-    width: 100%;
-    left: 0;
-    top: 0;
-    right: 0;
-    height: 750px;
 }
 .content_header{
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 14px;
+    min-height: 100px;
 }
 .lister_ul_navbar{
     display: flex;
     justify-content: space-between;
     align-items: center;
-    transform: translateX(1000px);
-    transition: 3s ease-in-out all;
-}
-.list_navbar{
-    margin-right: 25px;
+    width: 20vw;
 }
 .anchor_navbar{
     color: white;
@@ -65,23 +57,15 @@
     color: white;
 }
 /***************************/
-#navSlide.navbar {
-    animation-name: menuLateral;
-    animation-duration: 1s;
-    animation-fill-mode: forwards;
-}
-@keyframes menuLateral{
-    0% {opacity: 0;}
-    85%{opacity: 0;}
-    90%{opacity: 1;}
-    100% {opacity: 1;transform: translateX(244px);transition: 22s ease;}
-
-}
 /*************/
 .first_section{
-    margin: 70px 0;
     display: flex;
-    align-items: center;
+    justify-content: space-between;
+    align-items: flex-end;
+    height: 80vh;
+}
+.content_first_section{
+    height: 60%;
 }
 .heading_first_section{
     font-size: 100px;
@@ -114,50 +98,35 @@
     width: 100%;
 }
 .card1{
-    padding: 13px;
+    display: flex;
+    flex-direction: column;
+   
     width: 44%;
     margin-bottom: 10px;
-    height: 250px;
+    height: 30vh;
     border-radius: 5px;
-    border: none;
-    transition: .4s ease-in-out;
-    overflow: hidden;
 }
-.card1:hover{
-    transform: scale(90%);
-    width:260px;
-    height: 260px;
-    border-radius: 50%;
-    border: 2px solid indigo;
-    overflow: hidden;
-}
-.heading_4_first_section{
-    text-align: left;
-    font-size: 20pt;
-    font-family: Verdana, Geneva, Tahoma, sans-serif;
-    color: #0008;
-    letter-spacing: 4px;
-    margin-bottom: 10px;
-}
-.paragraph_card_first_section{
-    text-shadow: 5px 2px 3px black;
-}
+
 .one{
     background: url('../imagem/8b57fd1f4fd043eb5cd642ee94fb540e.jpg');
     background-size: cover;
+    background-position: center;
 }
 .two{
     
     background: url('../imagem/de98b274aabd44a82442581c009a0fa8.jpg');
     background-size: cover;
+    background-position: center;
 }
 .three{
     
     background: url('../imagem/d931ae0db615dc45c6b3ca7b9763dac4.jpg');
     background-size: cover;
+    background-position: center;
 }
 .four{
     
     background: url('../imagem/94d6e7091a239fd63a0b8b6eeadcda1e.jpg');
     background-size: cover;
+    background-position: center;
 }
